@@ -1,0 +1,531 @@
+body {
+    background-color: #FDF8ED;
+    height: 100vh;
+}
+
+body.modalBlur > *:not(.modal) {    
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    transition: all .1s ease-in-out;
+}
+
+.vr-text .schedule {
+    position: fixed;
+    left: 21px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-180deg);
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.8px;
+    color: #000;    
+    font-family: questa-grande, serif;
+}
+
+.vr-text .icons {
+    position: fixed;
+    left: 21px;
+    bottom: 21px;
+}
+
+.vr-text .icons a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+    color: #181A19;
+    font-size: 18px;
+    opacity: .8;
+    transition: all .2s ease-in-out;
+}
+
+.vr-text .icons a:hover {
+    opacity: 1;
+}
+
+#close-modal {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+#close-modal img {
+    transition: all .2s ease-in-out;
+}
+
+#close-modal:hover img {
+    transform: rotate(180deg);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar-nav {
+    margin: 100px 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: questa-grande, serif;
+    font-size: 62px;
+    line-height: 70px;
+    color: #000000;
+    text-align: center;
+}
+
+.navbar-nav a {
+	overflow: hidden;
+}
+
+.navbar-nav a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.navbar-nav a span::before {
+	position: absolute;
+    top: 120%;
+	content: attr(data-hover);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.navbar-nav a:hover span,
+.navbar-nav a:focus span {
+	-webkit-transform: translateY(-120%);
+	-moz-transform: translateY(-120%);
+	transform: translateY(-120%);
+}
+
+
+/* About Modal */
+#about .modal-body .vr-text {
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: 5.81px;
+    color: black;
+    font-family: questa-grande, serif;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 20%;
+    z-index: 10;
+}
+
+#about .container h3 {
+    color: #181A19;
+    font-size: 45px;
+    line-height: 56px;
+    margin: 94px 0 62px 90px;
+    font-family: questa-grande, serif;
+    max-width: 776px;
+}
+
+#about .row p {
+    color: #181A19;
+    font-size: 17px;
+    line-height: 26px;
+    font-family: 'Quattrocento', serif;
+    max-width: 374px;
+}
+
+#about .modal-body img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+/* Menu Modal */
+.menu-card {
+    border: 1px dashed #979797;
+    max-width: 543px;
+    margin: 0 auto 53px auto;
+}
+
+.menu-card h3 {
+    padding: 6px 25px 3px 25px;
+    font-family: questa-grande, serif;
+    font-size: 36px;
+    line-height: 45px;
+    color: #181A19;
+}
+
+.menu-card .menu-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #979797;
+    padding: 15px 25px 5px 25px;
+}
+
+.menu-card .menu-item .recipe {
+    color: #000000;
+    font-family: 'Quattrocento', serif; 
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.menu-card .menu-item .price {
+    color: #000000;
+    font-family: questa-grande, serif;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+.btn-download {
+    background: #000;
+    color: #fff;
+    border-radius: 0px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.75px;
+    font-family: 'Quattrocento', serif; 
+    font-weight: bold;
+    padding: 16px 107px 13px 107px;
+}
+
+.btn-download:hover {
+    background: transparent;
+    border: 1px solid #000;
+}
+
+/* Gallery Modal */
+#gallery .modal-body .thumb {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#gallery .modal-body .thumb img {
+    transition: all .3s ease-in-out;
+}
+
+#gallery .modal-body .thumb:hover img {
+    transform: scale(1.2);
+}
+
+/* Reservations Modal */
+#contact h2 {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 38px;
+    font-family: questa-grande, serif;
+    font-size: 36px;
+    line-height: 45px;
+    color: #181A19;
+}
+
+#contact form {
+    max-width: 492px;
+    margin: 0 auto 110px auto;
+}
+
+#contact form input {
+    height: 52px;
+    margin: 30px auto;
+    border: 1px solid #000000;
+    border-radius: 0px !important;
+    background-color: transparent;
+    padding: 16px 16px 13px 16px;
+}
+
+#contact form input, #contact form input::-webkit-input-placeholder {
+    color: #181A19;
+    letter-spacing: 1.75px;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    font-family: 'Quattrocento', serif; 
+    font-weight: bold;
+}
+
+#contact form input:focus, #contact form input:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #000000;
+}
+
+#contact form button {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.75px;
+    font-family: 'Quattrocento', serif; 
+    font-weight: bold;
+    border-radius: 0px;
+    padding: 16px 107px 13px 107px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#contact form button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+#contact .modal-body .alert {
+    max-width: 491px;
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+/* Privacy Policy Modal */
+#privacy h2 {
+    font-family: questa-grande, serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#privacy p {
+    margin: 30px auto;
+    max-width: 800px;
+    font-size: 18px;
+    font-family: 'Quattrocento', serif;
+}
+
+/* Footer */
+.footer p, .footer a {
+    color: #000 !important;
+    font-family: questa-grande, serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+.footer .address {
+    font-size: 23px;
+}
+
+@media (max-width: 767px) {
+    .modal-fullscreen-xs-down {
+        padding: 0 !important;
+    }
+    .modal-fullscreen-xs-down .modal-dialog {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .modal-fullscreen-xs-down .modal-content {
+        height: auto;
+        min-height: 100%;
+        border: 0 none;
+        border-radius: 0;
+    }
+    body {
+        justify-content: space-around;
+    }
+    .navbar-nav .nav-item .nav-link {
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .modal-fullscreen-sm-down {
+        padding: 0 !important;
+    }
+    .modal-fullscreen-sm-down .modal-dialog {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .modal-fullscreen-sm-down .modal-content {
+        height: auto;
+        min-height: 100%;
+        border: 0 none;
+        border-radius: 0;
+    }
+}
+@media (max-width: 1199px) {
+    .modal-fullscreen-md-down {
+        padding: 0 !important;
+    }
+    .modal-fullscreen-md-down .modal-dialog {
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .modal-fullscreen-md-down .modal-content {
+        height: auto;
+        min-height: 100%;
+        border: 0 none;
+        border-radius: 0;
+    }
+    #about .container h3 {
+        margin: 62px 0;
+    }
+}
+@media (max-width: 1600px) {
+    #about .modal-body .vr-text {
+        position: absolute;
+        left: 19%;
+    }
+}
+.modal-fullscreen {
+    padding: 0 !important;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    animation-delay: .2s;
+}
+.modal-fullscreen .modal-dialog {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.modal-fullscreen .modal-content {
+    background-color: #FDF8ED;
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+    padding-top: 38px;
+    transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+}
+.modal-fullscreen .modal-content .modal-body {
+    padding-top: 100px;
+}
+
+.has-lightbox .modal-fullscreen {
+    z-index: 1000;
+}
+
+@media (max-width: 900px) {
+    .vr-text {
+        display: none;
+    }
+}
+
+@media (min-width: 900px) {
+    body:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 63px;
+        width: 1px;
+        height: 100%;
+        background: #979797;
+    }
+}
+
+.intl-tel-input {
+    display: block !important;
+}
+
+#phone {
+    padding: 0 100px !important;
+    margin-bottom: 30px !important;
+}
+
+/* Cursor */
+@media(min-width: 992px) {
+    .cursor-on {
+        cursor: none;
+    }
+    .cursor-on * {
+        cursor: none;
+    }
+    .cursor-on .cursor {
+        position: fixed;
+        z-index: 9999;
+        pointer-events: none;
+        top: -1rem;
+        left: -1rem;
+    }
+    .cursor-on .cursor > span {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #181A19;
+        transform: scale(1);
+    }
+    .cursor-on .cursor > span:before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #181A19;
+        border-radius: 50%;
+        opacity: .2;
+        transform: scale(0);
+        transition: all .3s ease-in-out;
+    }
+    .cursor-on .cursor > span.off {
+        transform: scale(0);
+    }
+    .cursor-on .cursor > span.link:before {
+        transform: scale(1);
+    }
+}
+
+/* Loader */
+.spinner {
+    position : fixed;
+    top      : 50%;
+    left     : 50%;
+    width    : 50px;
+    height   : 50px;
+    transform: translate(-50%, -50%);
+    z-index  : 1050;
+}
+  
+.double-bounce1,
+.double-bounce2 {
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 50%;
+    background-color: black;
+    opacity         : .6;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    animation       : sk-bounce 2s infinite ease-in-out;
+    z-index         : 1050;
+}
+  
+.double-bounce2 {
+animation-delay: -1s;
+}
+  
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+}

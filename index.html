@@ -1,0 +1,881 @@
+<!--
+ ____   __   __ _  ____  __  ____  __ _
+(  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+ ) _ ((  O )/    / ) _)(  O ))   / )  (
+(____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A demo website for the Ossington Restaurant Template" />
+    <meta name="keywords" content="" />
+    <meta property="fb:app_id" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ossington.bonfork.net" />
+    <meta property="og:title" content="Ossington Restaurant" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="A demo website for the Ossington Restaurant Template" />
+    <meta property="restaurant:category" content="Restaurant" />
+    <meta property="restaurant:owner_verified" content="False" />
+    <meta property="restaurant:price_rating" content="2" />
+    <meta property="restaurant:contact_info:street_address" content="12 Yonge Street" />
+    <meta property="restaurant:contact_info:locality" content="Toronto" />
+    <meta property="restaurant:contact_info:region" content="ON" />
+    <meta property="restaurant:contact_info:postal_code" content="M5E 1Z9" />
+    <meta property="restaurant:contact_info:country_name" content="CA" />
+    <meta property="restaurant:contact_info:email" content="INFO@OSSINGTON.COM" />
+    <meta property="restaurant:contact_info:phone_number" content="+44 (0)1234 56789" />
+    <meta property="restaurant:contact_info:website" content="https://ossington.bonfork.net" />
+    <meta property="place:location:latitude" content="43.643162" />
+    <meta property="place:location:longitude" content="-79.376259" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!--
+    ____   __   __ _  ____  __  ____  __ _
+    (  _ \ /  \ (  ( \(  __)/  \(  _ \(  / )
+    ) _ ((  O )/    / ) _)(  O ))   / )  (
+    (____/ \__/ \_)__)(__)  \__/(__\_)(__\_)
+    -->
+    <title>Ossington Restaurant</title>
+
+    <link rel="dns-prefetch" href="//use.typekit.net/">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com/">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com/">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/simplelightbox.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kcv4efx.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/css/intlTelInput.css">
+
+    <!-- Schema json -->
+    <script id="data" type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Restaurant",
+            "image": "images/ossington-1.jpg",
+            "priceRange": "$",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Toronto",
+              "addressRegion": "ON",
+              "addressCountry": "Canada",
+              "postalCode": "M5E 1Z9",
+              "streetAddress": "12 Yonge St."
+            },
+            "name": "Ossington Restaurant",
+            "telephone": "+44 (0)1234 56789",
+            "url": "https://ossington.bonfork.net",
+            "paymentAccepted": "",
+            "description": "Ossington Restaurant Demo description. Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam id urna egestas ultricies nulla at viverra nibh donec sollicitudin metus sit amet est laoreet gravida donec cursus enim quis.",
+          
+            "servesCuisine": "French cuisine",
+            "menu": "https://ossington.bonfork.net/#",
+          
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Monday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Tuesday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Wednesday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Thursday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Friday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Saturday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": true
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "http://schema.org/Sunday",
+                "opens": "10:00",
+                "closes": "23:00",
+                "is_open": false
+              }
+            ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Menu",
+                "itemListElement": [
+                  {
+                    "@type": "OfferCatalog",
+                    "name": "Main Menu",
+                    "itemListElement": [
+                      {
+                        "@type": "OfferCatalog",
+                        "name": "Breakfast",
+                        "itemListElement": [
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 7.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Crab Cake Sandwich",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 9.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Tuscan Grilled Chicken Panini",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 9.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Southwest Turkey Club",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 9.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Mediterranean Turkey Panini",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "@type": "OfferCatalog",
+                        "name": "Lunch",
+                        "itemListElement": [
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 9.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Pulled Pork",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 7,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Lobster Roll",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 7.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Tuna Melt",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 10.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "French Dip",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "@type": "OfferCatalog",
+                        "name": "Dinner",
+                        "itemListElement": [
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 7.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Build Your Own",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 12.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Black and Blue",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 8.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Soup and Sandwich or Salad",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          },
+                          {
+                            "@type": "Offer",
+                            "priceCurrency": "CAD",
+                            "price": 11.95,
+                            "itemOffered": {
+                              "@type": "MenuItem",
+                              "name": "Carribean Jerk",
+                              "description": "",
+                              "image": [""],
+                              "nutrition": {
+                                "@type": "NutritionInformation",
+                                "calories": ""
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+          }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=ID_PROPERTY_HERE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'ID_PROPERTY_HERE');
+    </script>
+</head>
+
+<body>
+    <div class="animsition p-0 m-0">
+        <div class="vr-text">
+            <div class="schedule">
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/bonfork/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/_Bonfork_">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/bonfork/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <img src="images/Logo.svg" alt="Logo" id="logo">
+
+            <ul class="navbar-nav">
+                <li class="nav-item" data-toggle="modal" data-target="#about">
+                    <a href="#about" class="nav-link" title="About">
+                        <span data-hover="About">About</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#menu">
+                    <a href="#menu" class="nav-link" title="Our Menu">
+                        <span data-hover="Our Menu">Our Menu</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#gallery">
+                    <a href="#gallery" class="nav-link" title="Gallery">
+                        <span data-hover="Gallery">Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-toggle="modal" data-target="#contact">
+                    <a href="#contact" class="nav-link" title="Contacts">
+                        <span data-hover="Contacts">Contacts</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer">
+                <p class="address">109 Wellingon Street North, Richmond 604.829.1092</p>
+                <p>Restaurant Website by
+                    <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Modal Fullscreen -->
+        <div id="about" class="modal permalink page-model modal-fullscreen animated zoomIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img width="95" src="images/Logo.svg" alt="Logo" class="mx-auto" data-dismiss="modal" style="cursor: pointer;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal">
+                        <span aria-hidden="true">
+                            <img src="images/close.svg" title="Close">
+                        </span>
+                    </button>
+                    <div class="modal-body">
+                        <h2 class="vr-text d-none d-xl-block">About</h2>
+                        <div class="owl-carousel owl-theme">
+                            <div>
+                                <img src="images/gallery-12.jpg" class="img-fluid" alt="Gallery Image"> </div>
+                            <div>
+                                <img src="images/gallery-5.jpg" class="img-fluid" alt="Gallery Image"> </div>
+                            <div>
+                                <img src="images/gallery-18.jpg" class="img-fluid" alt="Gallery Image"> </div>
+                        </div>
+                        <div class="container">
+                            <h3>Celebrating great food that's cooked with love and dedication, great environment and lots of
+                                passionate customers.
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="float-left float-md-right">
+                                        As we believe that quality is the most important thing, we provide a team of talented and hardworking professionals, who
+                                        will deliver exceptional results for our customers. We believe in providing our customers
+                                        with quality products that will not only delight them, but also keep them coming
+                                        back for more. We look forward to celebrating our great customer service, with great
+                                        product, great environment and lots of passionate customers who will always be in
+                                        the loop.
+                                        <br>
+                                        <br>
+                                        <strong>Providing customers with a magical dining experience, which we know will be memorable
+                                            and repeatable</strong>
+                                        <br>
+                                        <br> To us it means that we are committed to providing customers with a magical shopping
+                                        experience, which we know will be memorable and repeatable. We are ready to take
+                                        the next step and create a ‘luxury brand’
+                                    </p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>
+                                        that combines quality ingredients with a unique style, to create a food experience like nothing else, the same as you have
+                                        never experienced. It’s time to take your business to the next level with our innovative
+                                        products and innovative business model.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer mt-5">
+                            <p class="address">109 Wellingon Street North, Richmond 604.829.1092</p>
+                            <p>Open Monday to Sunday 10 am - 11 pm</p>
+                            <p>Email Us:
+                                <a href="mailto:info@ossingtonselectbistro.com" title="Email Us">info@ossingtonselectbistro.com</a>
+                            </p>
+                            <p>Copyright
+                                <span id="current-year"></span> All Rights Reserved -
+                                <a href="#" data-toggle="modal" data-target="#privacy-fullscreen" title="Privacy Policy">Privacy Policy</a>
+                            </p>
+                            <p>Restaurant Website by
+                                <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENU MODAL -->
+        <div id="menu" class="modal permalink page-model modal-fullscreen animated zoomIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img width="95" src="images/Logo.svg" alt="Logo" class="mx-auto" data-dismiss="modal" style="cursor: pointer;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal">
+                        <span aria-hidden="true">
+                            <img src="images/close.svg" title="Close">
+                        </span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="menu-card" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <h3>Breakfast</h3>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Chef's Omlette</h6>
+                                <h6 class="price" itemprop="price">$12.75</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Club Sandwich</h6>
+                                <h6 class="price" itemprop="price">$7.25</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Poached Eggs</h6>
+                                <h6 class="price" itemprop="price">$8</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Montreal Poutine</h6>
+                                <h6 class="price" itemprop="price">$14</h6>
+                            </div>
+                        </div>
+                        <div class="menu-card" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <h3>Lunch</h3>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Mozzarella Sticks</h6>
+                                <h6 class="price" itemprop="price">$4.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Buffalo Wings or Tenders</h6>
+                                <h6 class="price" itemprop="price">$9.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Red Hook Ale Battered Popcorn Shrimp</h6>
+                                <h6 class="price" itemprop="price">$8.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Crab Cake Sandwich</h6>
+                                <h6 class="price" itemprop="price">$7.95</h6>
+                            </div>
+                        </div>
+                        <div class="menu-card" itemscope itemtype="http://schema.org/OfferCatalog">
+                            <h3>Dinner</h3>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Tuscan Grilled Chicken Panini</h6>
+                                <h6 class="price" itemprop="price">$9.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Southwest Turkey Club</h6>
+                                <h6 class="price" itemprop="price">$9.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">Tuna Melt</h6>
+                                <h6 class="price" itemprop="price">$7.95</h6>
+                            </div>
+                            <div class="menu-item" itemscope itemtype="http://schema.org/Offer">
+                                <h6 class="recipe" itemprop="name">French Dip</h6>
+                                <h6 class="price" itemprop="price">$10.95</h6>
+                            </div>
+                        </div>
+
+                        <center>
+                            <button class="btn btn-download">Download Menu</button>
+                        </center>
+
+                        <div class="footer">
+                            <p class="address">109 Wellingon Street North, Richmond 604.829.1092</p>
+                            <p>Open Monday to Sunday 10 am - 11 pm</p>
+                            <p>Email Us:
+                                <a href="mailto:info@ossingtonselectbistro.com" title="Email Us">info@ossingtonselectbistro.com</a>
+                            </p>
+                            <p>Copyright
+                                <span id="current-year"></span> All Rights Reserved -
+                                <a href="#" data-toggle="modal" data-target="#privacy-fullscreen" title="Privacy Policy">Privacy Policy</a>
+                            </p>
+                            <p>Restaurant Website by
+                                <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GALLERY MODAL -->
+        <div id="gallery" class="modal permalink page-model modal-fullscreen animated zoomIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img width="95" src="images/Logo.svg" alt="Logo" class="mx-auto" data-dismiss="modal" style="cursor: pointer;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal">
+                        <span aria-hidden="true">
+                            <img src="images/close.svg" title="Close">
+                        </span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="gallery container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="thumb">
+                                        <a href="images/gallery-12.jpg">
+                                            <img src="images/thumbnails/thumbnail-12.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-7.jpg">
+                                            <img src="images/thumbnails/thumbnail-7.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-6.jpg">
+                                            <img src="images/thumbnails/thumbnail-6.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-9.jpg">
+                                            <img src="images/thumbnails/thumbnail-9.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-11.jpg">
+                                            <img src="images/thumbnails/thumbnail-11.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-16.jpg">
+                                            <img src="images/thumbnails/thumbnail-16.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-15.jpg">
+                                            <img src="images/thumbnails/thumbnail-15.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="thumb">
+                                        <a href="images/gallery-10.jpg">
+                                            <img src="images/thumbnails/thumbnail-10.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-17.jpg">
+                                            <img src="images/thumbnails/thumbnail-17.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-1.jpg">
+                                            <img src="images/thumbnails/thumbnail-1.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-18.jpg">
+                                            <img src="images/thumbnails/thumbnail-18.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-3.jpg">
+                                            <img src="images/thumbnails/thumbnail-3.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-4.jpg">
+                                            <img src="images/thumbnails/thumbnail-4.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="thumb">
+                                        <a href="images/gallery-13.jpg">
+                                            <img src="images/thumbnails/thumbnail-13.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-14.jpg">
+                                            <img src="images/thumbnails/thumbnail-14.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-5.jpg">
+                                            <img src="images/thumbnails/thumbnail-5.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-19.jpg">
+                                            <img src="images/thumbnails/thumbnail-19.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-8.jpg">
+                                            <img src="images/thumbnails/thumbnail-8.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="thumb">
+                                        <a href="images/gallery-2.jpg">
+                                            <img src="images/thumbnails/thumbnail-2.png" alt="Gallery Image" class="w-100 img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer mt-5">
+                            <p class="address">109 Wellingon Street North, Richmond 604.829.1092</p>
+                            <p>Open Monday to Sunday 10 am - 11 pm</p>
+                            <p>Email Us:
+                                <a href="mailto:info@ossingtonselectbistro.com" title="Email Us">info@ossingtonselectbistro.com</a>
+                            </p>
+                            <p>Copyright
+                                <span id="current-year"></span> All Rights Reserved -
+                                <a href="#" data-toggle="modal" data-target="#privacy-fullscreen" title="Privacy Policy">Privacy Policy</a>
+                            </p>
+                            <p>Restaurant Website by
+                                <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT MODAL -->
+        <div id="contact" class="modal permalink page-model modal-fullscreen animated zoomIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img width="95" src="images/Logo.svg" alt="Logo" class="mx-auto" data-dismiss="modal" style="cursor: pointer;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal">
+                        <span aria-hidden="true">
+                            <img src="images/close.svg" title="Close">
+                        </span>
+                    </button>
+                    <div class="modal-body">
+                        <div class="alert alert-success" role="alert">
+                            Your reservation request has been sent. One of our staff will get back to you with a confirmation.
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            Something went wrong!
+                        </div>
+                        <h2>Book your table today</h2>
+                        <form id="reservation-form" method="POST">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" oninvalid="setCustomValidity('Please enter a valid email address!')"
+                                onchange="setCustomValidity('')" class="form-control" placeholder="Your Email" required>
+                            <input type="number" name="guests" class="form-control" id="no-guests" placeholder="No. Of Guests" required>
+                            <input type="text" name="Date" class="form-control" id="date" placeholder="MM/DD" required autocomplete="off" minlength="7"
+                                maxlength="7">
+                            <input type="text" name="Time" class="form-control" id="time" placeholder="hh:mm" minlength="7" maxlength="7" required>
+                            <input type="tel" name="phone" class="form-control" placeholder="Phone Number" id="phone" required>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-submit">Submit</button>
+                            </div>
+
+                        </form>
+                        <div class="footer">
+                            <p class="address">109 Wellingon Street North, Richmond 604.829.1092</p>
+                            <p>Open Monday to Sunday 10 am - 11 pm</p>
+                            <p>Email Us:
+                                <a href="mailto:info@ossingtonselectbistro.com" title="Email Us">info@ossingtonselectbistro.com</a>
+                            </p>
+                            <p>Copyright
+                                <span id="current-year"></span> All Rights Reserved -
+                                <a href="#" data-toggle="modal" data-target="#privacy-fullscreen" title="Privacy Policy">Privacy Policy</a>
+                            </p>
+                            <p>Restaurant Website by
+                                <a href="https://bonfork.com/" title="Bonfork">Bonfork</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PRIVACY POLICY MODAL -->
+        <div id="privacy" class="modal permalink page-model modal-fullscreen animated zoomIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <img width="95" src="images/Logo.svg" alt="Logo" class="mx-auto" data-dismiss="modal" style="cursor: pointer;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-modal">
+                        <span aria-hidden="true">
+                            <img src="images/close.svg" title="Close">
+                        </span>
+                    </button>
+                    <div class="modal-body">
+                        <h2>Privacy Policy</h2>
+                        <p>Your privacy is important to us. It is Aledia's policy to respect your privacy regarding any information
+                            we may collect from you across our website,
+                            <a href="https://ossington.bonfork.net/" title="Website URL">https://ossington.bonfork.net/</a>, and other sites we own and operate.</p>
+                        <p>We only ask for personal information when we truly need it to provide a service to you. We collect
+                            it by fair and lawful means, with your knowledge and consent. We also let you know why we’re
+                            collecting it and how it will be used.</p>
+                        <p>We only retain collected information for as long as necessary to provide you with your requested
+                            service. What data we store, we’ll protect within commercially acceptable means to prevent loss
+                            and theft, as well as unauthorized access, disclosure, copying, use or modification.</p>
+                        <p>We don’t share any personally identifying information publicly or with third-parties, except when
+                            required to by law.</p>
+                        <p>Our website may link to external sites that are not operated by us. Please be aware that we have
+                            no control over the content and practices of these sites, and cannot accept responsibility or
+                            liability for their respective privacy policies.</p>
+                        <p>You are free to refuse our request for your personal information, with the understanding that we
+                            may be unable to provide you with some of your desired services.</p>
+                        <p>Your continued use of our website will be regarded as acceptance of our practices around privacy
+                            and personal information. If you have any questions about how we handle user data and personal
+                            information, feel free to contact us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cursor">
+            <span class="off"></span>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.6/js/intlTelInput.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/simple-lightbox.js"></script>
+
+    <script>
+        $(function () {
+            var $gallery = $('.gallery a').simpleLightbox();
+        });
+
+        var today = new Date();
+        var year = today.getFullYear();
+        document.getElementById('current-year').textContent = year;
+
+
+        $(document).ready(function () {
+            function tConvert(time) {
+                time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+                if (time.length > 1) {
+                    time = time.slice(1);
+                    time[5] = +time[0] < 12 ? 'AM' : 'PM';
+                    time[0] = +time[0] % 12 || 12;
+                }
+                return time.join('');
+            }
+
+            var data = JSON.parse($('#data').html());
+
+            var today = new Date();
+
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+
+            if (!data.openingHoursSpecification[today.getDay()].is_open) {
+                $('.schedule').text('Open ' + weekday[today.getDay() + 1] + ' at ' + tConvert(data.openingHoursSpecification[today.getDay()].opens));
+            }
+            else if (data.openingHoursSpecification[today.getDay()].opens.split(':')[0] > today.getHours()) {
+                $('.schedule').text('opens today at ' + tConvert(data.openingHoursSpecification[today.getDay()].opens));
+            }
+            else if (data.openingHoursSpecification[today.getDay()].closes.split(':')[0] > today.getHours()) {
+                $('.schedule').text('open today till ' + tConvert(data.openingHoursSpecification[today.getDay()].closes));
+            }
+            else if (data.openingHoursSpecification[today.getDay()].closes.split(':')[0] <= today.getHours()) {
+                $('.schedule').text('Open ' + weekday[today.getDay() + 1] + ' at ' + tConvert(data.openingHoursSpecification[today.getDay()].opens));
+            }
+        });
+    </script>
+</body>
+
+</html>
